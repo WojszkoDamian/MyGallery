@@ -35,9 +35,9 @@ $(document).ready(function ()
     $("#tags_done").click(function ()
     {
         var flickr_url = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
-        var tags = $("#tags").val().toString().toLowerCase().replace(/ /g, "+");
+        var tags = $("#tags").val().toString().toLowerCase().replace(/ /g, ",");
         var key = "3452cfd03eb7fbb81a0a44681be972ef";
-        var tag_mode = "any";
+        var tag_mode = "all";
         var extras = "url_m";
         var per_page = 10;
         var format = "json";
